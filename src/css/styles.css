@@ -1,0 +1,483 @@
+/* --- Variables de Color Globales --- */
+:root {
+  --primary-purple: #b195fd;
+  --light-purple: #f0edfa;
+  --dark-text: #333333;
+  --light-text: #8a8a8a;
+  --border-color: #dcdcdc;
+  --white: #ffffff;
+  --body-bg: #f9f9f9;
+}
+
+/* --- Estilos Generales del Body --- */
+body {
+   font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-color: var(--body-bg);
+  margin: 0;
+}
+
+/* --- Contenedor Principal del Login --- */
+#loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    width: 50%;
+    min-height: 50%;    
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* --- Tarjeta del Formulario (#login) --- */
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: var(--white);
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: left;
+}
+
+#loginForm h2 {
+  color: var(--dark-text);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* --- Formulario y sus elementos --- */
+
+
+#username,#password {
+  width: 100%;
+  position: relative;
+}
+
+#username label ,#password label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--dark-text);
+}
+
+#username input,#password input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--dark-text);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+#username input:focus,#password input:focus {
+  outline: none;
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 3px var(--light-purple);
+}
+
+/* --- Enlace y Botón --- */
+.account-link {
+  color: var(--primary-purple);
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: right;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+#loginForm button {
+  background: var(--primary-purple);
+  color: var(--white);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(106, 61, 232, 0.3);
+}
+
+#loginForm button:hover {
+  background: #5a28d1;
+  transform: translateY(-2px);
+}
+
+/* --- Estilos para la página de eventos (landing de eventos) --- */
+.events-landing {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(106, 61, 232, 0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.events-landing h1 {
+  color: var(--primary-purple);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.events-landing p {
+  color: var(--light-text);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.event {
+  background: var(--light-purple);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(106, 61, 232, 0.07);
+  padding: 1.5rem 1.2rem;
+  min-width: 260px;
+  max-width: 320px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.event h2 {
+  color: var(--primary-purple);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.event p {
+  color: var(--dark-text);
+  font-size: 1rem;
+  margin: 0.2rem 0 0.5rem 0;
+}
+
+.event button {
+  background: var(--primary-purple);
+  color: var(--white);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.event button:hover{
+  background: #5a28d1;
+  transform: translateY(-2px);
+}
+
+/* --- Estilos para la vista de Registro --- */
+.register-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--body-bg);
+}
+
+#register {
+  background: var(--white);
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: left;
+}
+
+#register h2 {
+  color: var(--dark-text);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+#registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#registerForm input[type="text"],
+#registerForm input[type="password"] {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--dark-text);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  background: var(--light-purple);
+}
+
+#registerForm input:focus {
+  outline: none;
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 3px var(--light-purple);
+}
+
+#registerForm button {
+  background: var(--primary-purple);
+  color: var(--white);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px rgba(106, 61, 232, 0.3);
+}
+
+#registerForm button:hover {
+  background: #5a28d1;
+  transform: translateY(-2px);
+}
+
+#registerForm .login-link {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--light-text);
+}
+
+#registerForm .login-link a {
+  color: var(--primary-purple);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+#registerForm .login-link a:hover {
+  color: #5a28d1;
+}
+
+/* --- Estilos para el Dashboard Admin --- */
+#tituloAdmin {
+  display: flex;
+  align-items: center;
+  color: var(--primary-purple);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+#adminSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+} 
+
+#formTitle {
+  color: var(--primary-purple);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#eventForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+  background: var(--light-purple);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(106, 61, 232, 0.07);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+}
+
+#eventForm input[type="text"],
+#eventForm input[type="number"] {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  background: var(--white);
+  color: var(--dark-text);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 0.2rem;
+}
+
+#eventForm input:focus {
+  outline: none;
+  border-color: var(--primary-purple);
+  box-shadow: 0 0 0 2px var(--light-purple);
+}
+
+#eventForm button {
+  background: var(--primary-purple);
+  color: var(--white);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.5rem;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 15px rgba(106, 61, 232, 0.15);
+}
+
+#eventForm button:hover {
+  background: #5a28d1;
+  transform: translateY(-2px);
+}
+
+/* --- Estilos para la barra de navegación principal --- */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-purple);
+  color: var(--white);
+  padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  box-shadow: 0 2px 12px rgba(106, 61, 232, 0.10);
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 2.5rem;
+}
+
+nav h2 {
+  margin: 0 0 0.5rem 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0 0 0 0.5rem;
+  align-items: center;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav a[data-link] {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a[data-link]:hover {
+  background: var(--light-purple);
+  color: var(--primary-purple);
+}
+
+#logoutBtn {
+  background: var(--white);
+  color: var(--primary-purple);
+  border: none;
+  padding: 0.4rem 1.1rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 0.5rem;
+}
+
+#logoutBtn:hover {
+  background: #e5dbfa;
+  color: #4b2bb7;
+}
+
+
+/*----------Estilos dashboard User----------*/
+#tituloUser {
+  display: flex;
+  align-items: center;
+  color: var(--primary-purple);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+#userSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 100%
+}
+
+#eventos-lista h2 {
+  margin-bottom: 10px;
+}
+
+#eventos-lista ul {
+  list-style: none;
+}
+
+#eventos-lista li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: flex-start;
+  }
+  nav {
+    padding: 1rem 0.2rem;
+  }
+  nav h2 {
+    font-size: 1.3rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary-purple);
+  color: var(--white);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

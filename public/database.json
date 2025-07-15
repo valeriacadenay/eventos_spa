@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "16f5",
+      "nombre": "valeria",
+      "username": "valercadey",
+      "password": "2401",
+      "role": "user"
+    },
+    {
+      "id": "5e2e",
+      "nombre": "Bruno",
+      "username": "pataconcito",
+      "password": "123",
+      "role": "user"
+    }
+  ],
+  "events": [
+    {
+      "titulo": "marketing",
+      "descripcion": "El marketing es un conjunto de estrategias y acciones que tienen como objetivo crear, comunicar y entregar valor a los clientes, construyendo relaciones mutuamente beneficiosas. Se enfoca en identificar, anticipar y satisfacer las necesidades de los consumidores para lograr los objetivos de la empresa, como aumentar las ventas, generar lealtad y fortalecer la marca.",
+      "categoria": "ventas",
+      "instructor": "Valeria",
+      "capacidad": 20,
+      "inscritos": [
+        "16f5",
+        "5e2e"
+      ],
+      "id": "e6f0"
+    },
+    {
+      "id": "aa9e",
+      "titulo": "Carnaval",
+      "descripcion": "Carnaval de barranquilla",
+      "categoria": "Fiesta",
+      "instructor": "checo acosta",
+      "capacidad": 50,
+      "inscritos": []
+    }
+  ]
+}
