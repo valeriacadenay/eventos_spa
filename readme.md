@@ -56,19 +56,25 @@ A modern Single Page Application (SPA) for managing and attending events and cou
 
 ## ⚙️ How to Run
 
-1. Clone this repository:
+1. Clone this repository:https://github.com/valeriacadenay/eventos_spa
    ```bash
    git clone https://github.com/valeriacadenay/eventos_spa.git
    ```
 2. Install dependencies and start the local API server:
    ```bash
-   npm install -g json-server
-   json-server --watch public/database.json --port 3000
+   npm install -json-server
+   npm run dev, here give the link for the local Host
+
+   and other console with:
+   npx npx json-server public/database.json  
+   here you could have the --port 3000, and you can se the endpoints that allow you to see de database.
+
+   If you want that the project work, the two console have to be woorking!!
    ```
-3. Open `index.html` in your browser.
+3. Open the local host `http://localhost:5173/` in your browser.
 4. Register a new user or log in as admin (default admin: `admin` / `admin123`).
 5. Explore the dashboard, create/edit/delete events (admin), or enroll in events (user).
-6. link to the displayed page =>
+
 
 ## ✨ Future Improvements
 - Persistent authentication
