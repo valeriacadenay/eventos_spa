@@ -84,7 +84,10 @@ A modern Single Page Application (SPA) for managing and attending events and cou
 - Real backend integration
 
 ## 👩‍💻 Author
-Valeria Cadena Yance  
-GitHub: [valeriacadenay](https://github.com/valeriacadenay)
+- Valeria Cadena Yance 
+- Clan: Caiman
+- Correo: valecade16@gmail.com
+- 1001915276 
+- GitHub: [valeriacadenay](https://github.com/valeriacadenay)
 
 ---
